@@ -29,11 +29,11 @@ class User(MySQLModel):
     status = peewee.IntegerField()
     User = peewee.ForeignKeyField('self')
 
-class Sup(MySQLModel):
+class support(MySQLModel):
     email = peewee.CharField()
     Website = peewee.CharField()
     problem = peewee.CharField()
-    telephone=peewee.IntegerField()
+    telephone=peewee.CharField()
 
 
 class Payment(MySQLModel):

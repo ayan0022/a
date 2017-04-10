@@ -248,7 +248,7 @@ class support_Handler(TornadoRequestBase):
         Website = self.get_argument('Website')
         problem = self.get_argument('problem')
         telephone = self.get_argument('telephone')
-        web = Sup.create(
+        web = support.create(
                 email=email,
                 Website=Website,
                 problem=problem,
