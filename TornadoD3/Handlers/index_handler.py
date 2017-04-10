@@ -240,6 +240,21 @@ class ForgetpassHandler(TornadoRequestBase):
     def get(self):
         self.render('home/forget_pass.html')
 
+class support_Handler(TornadoRequestBase):
+    def get(self):
+        self.render('home/support.html')
+    def post(self, *args, **kwargs):
+        email = self.get_argument('email')
+        Website = self.get_argument('Website')
+        problem = self.get_argument('problem')
+        telephone = self.get_argument('telephone')
+
+        Website = Sup.create(
+                email=email,
+                Website=Website,
+                problem=problem,
+                telephone=telephone
 
 
+            )
 
