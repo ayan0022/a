@@ -5,6 +5,7 @@ urlList  = [
     (r'/admin', admin_handler.admin_Handler),
     (r'/', index_handler.index_Handler),
     (r'/register', index_handler.register_Handler),
+    (r'/support', index_handler.support_Handler),
     (r'/forget_pass', index_handler.ForgetpassHandler),
     (r'/admin/payments', admin_handler.payments_Handler),
     (r'/admin/add_buy', admin_handler.add_buy_Handler),
